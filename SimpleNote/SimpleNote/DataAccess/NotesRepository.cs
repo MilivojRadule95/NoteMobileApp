@@ -10,6 +10,12 @@ namespace SimpleNote.DataAccess
     {
         private List<Note> _notes = new List<Note>();
 
+        public NotesRepository()
+        {
+            _notes.Add(new Note("Lala ding dong", "Pesma  Vampira izasla 1982 blabalbla"));
+            _notes.Add(new Note("wfergrtgret", "fwfweferferf fwefwfwef fwefwef"));
+        }
+
         public void AddNote(Note note)
         {
             _notes.Add(note);
